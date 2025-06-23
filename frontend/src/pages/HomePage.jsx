@@ -25,6 +25,8 @@ const HomePage = () => {
         } else {
           toast.error("Failed to fetch notes. Please try again later.");
         }
+      } finally {
+        setLoading(false);
       }
     }
   }, [])
